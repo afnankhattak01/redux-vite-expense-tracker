@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+  /* containers */
+  --container-size: 1100px;
+  /* general colors */
+  ---white: #fff;
+  --black: #000;
+  --blue: #0440b0;
+  /* colors for sections*/
+  --header-background-color: #122a58;
+  --navbar-font-color: #fff;
+  --basic-icon-size: 1.8rem;
+  /* link sizes */
+  --link-size: 1.2rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.main-navigation {
+  background-color: var(--header-background-color);
+  height: 60px;
+  color: var(--navbar-font-color);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.main-navigation h1,
+.exp-tracker-logo {
+  font-size: var(--basic-icon-size);
+}
+.exp-tracker-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.custom-container {
+  max-width: var(--container-size);
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.main-ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-ul {
+  list-style-type: none;
+}
+.main-ul li {
+  margin-left: 20px;
+}
+.main-ul li a {
+  font-size: var(--link-size);
+  text-decoration: none;
+  color: var(---white);
+}
+.main-ul li a:hover {
+  border-bottom: 3px solid goldenrod;
+}
+main {
+  margin-top: 90px;
+}
+
+.main-container h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.main-info-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.main-info-columns div {
+  flex-grow: 1;
+  padding: 25px 12px;
+  border-radius: 6px;
+  color: black;
+  font-size: 1.2rem;
+}
+
+.main-info-columns div:nth-child(1) {
+  background-color: rgb(217, 214, 214);
+}
+.main-info-columns div:nth-child(2) {
+  background-color: rgb(244, 144, 144);
+}
+.main-info-columns div:nth-child(3) {
+  background-color: rgb(159, 227, 159);
+}
+
+.budget-info {
+  margin-bottom: 70px;
+}
+
+.transaction-form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap;
+  margin: 10px 0;
+}
+
+.transaction-form div:nth-child(1) {
+  flex-basis: 45%;
+  flex-grow: 1;
+  flex-shrink: 3;
+}
+.transaction-form div:nth-child(2) {
+  flex-basis: 40%;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.transaction-form div:nth-child(3) {
+  flex-basis: 15%;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.add-transaction,
+.view-type-select {
+  margin-bottom: 50px;
+}
+.transaction-history {
+  margin-bottom: 50px;
+}
+
+.addtransaction-container {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.addtransaction-container .first-child {
+  flex-grow: 1;
+}
+
+.list-lines {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 1.1rem;
+}
+.icon-badges {
+  display: flex;
+  align-items: center;
+}
+
+.end-tabs {
+  width: 100%;
+}
+
+.submit-unod-edit {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+
+small{
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 705px) {
+  .transaction-form {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .main-ul {
+    display: none;
+  }
+}
